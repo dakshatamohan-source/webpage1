@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Genie Flower Shop</title>
+
+<style>
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background-video source src:url("https://youtu.be/fq8f9ZxLaC8");
+    background-size:cover;
+    background-attachment:fixed;
+}
+
+
+/* Video background */
+video{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    z-index:-1;
+}
+
+/* Navigation */
+nav{
+    background:rgba(255,255,255,0.9);
+    padding:15px;
+    text-align:center;
+}
+nav a{
+    text-decoration:none;
+    margin:20px;
+    font-weight:bold;
+    color:#c2185b;
+    font-size:18px;
+}
+
+/* Page Sections */
+.page{
+    min-height:100vh;
+    padding:50px;
+    background:rgba(255,255,255,0.85);
+    margin:30px;
+    border-radius:15px;
+}
+
+/* Headings */
+h1,h2{
+    text-align:center;
+    color:#880e4f;
+}
+
+/* Flowers */
+.flowers{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:30px;
+}
+.card{
+    background:white;
+    width:220px;
+    padding:15px;
+    border-radius:12px;
+    box-shadow:0 4px 8px rgba(0,0,0,0.2);
+    text-align:center;
+}
+.card img{
+    width:100%;
+    border-radius:10px;
+}
+.price{
+    color:#e91e63;
+    font-weight:bold;
+    font-size:18px;
+}
+
+/* Button */
+.btn{
+    display:inline-block;
+    padding:12px 20px;
+    background:#e91e63;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    margin-top:20px;
+}
+
+/* Form */
+form{
+    max-width:400px;
+    margin:auto;
+}
+input,textarea{
+    width:100%;
+    padding:10px;
+    margin:8px 0;
+    border-radius:6px;
+    border:1px solid #aaa;
+}
+button{
+    width:100%;
+    padding:12px;
+    background:#c2185b;
+    color:white;
+    border:none;
+    border-radius:6px;
+    font-size:16px;
+}
+
+ .bgvideo{
+                position: fixed;
+                z-index: -1;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+</style>
+</head>
+
+<body>
+   <video class="bgvideo" autoplay muted loop>
+            <source src="nad.mp4" type="video/mp4">
+        </video>
+
+<!-- Navigation -->
+<nav>
+    <a href="#home">Home</a>
+    <a href="#flowers">Flowers</a>
+    <a href="#order">Order</a>
+</nav>
+
+<!-- PAGE 1 : HOME -->
+<section id="home" class="page">
+    <h1>🌸 Genie Flower Shop 🌸</h1>
+    <p style="text-align:center;font-size:18px;">
+        Welcome to Genie Flower Shop!  
+        We deliver fresh, colorful and beautiful flowers for all occasions.
+    </p>
+
+    <div style="text-align:center;">
+        <img src="https://images.unsplash.com/photo-1526045431048-5a9bbdbf3a3d" width="400" style="border-radius:15px;">
+        <br><br>
+        <a href="#flowers" class="btn">View Flowers →</a>
+    </div>
+</section>
+
+<!-- PAGE 2 : FLOWERS -->
+<section id="flowers" class="page">
+    <h2>Our Flower Collection</h2>
+
+    <div class="flowers">
+        <div class="card">
+            <img src="https://th.bing.com/th/id/OIP.3eJopSzwtkRU1g-MaHhP3wHaJ4?w=208&h=277&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3">
+            <h3>Rose Bouquet</h3>
+            <p class="price">₹899</p>
+        </div>
+
+        <div class="card">
+            <img src="https://i.pinimg.com/originals/8b/14/16/8b1416b51c01ee81ac7884702ad55e81.png">
+            <h3>Sunflower Bunch</h3>
+            <p class="price">₹699</p>
+        </div>
+
+        <div class="card">
+            <img src="https://i.etsystatic.com/26456938/r/il/4fae24/3461762220/il_794xN.3461762220_ljci.jpg">
+            <h3>Mixed Flowers</h3>
+            <p class="price">₹999</p>
+        </div>
+
+        <div class="card">
+            <img src="https://th.bing.com/th/id/OIP.l36ZijmLijkqXEOVNaLbAAHaHa?w=194&h=194&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3">
+            <h3>Lily Basket</h3>
+            <p class="price">₹799</p>
+        </div>
+    </div>
+
+    <div style="text-align:center;">
+        <a href="#order" class="btn">Order Now →</a>
+    </div>
+</section>
+
+<!-- PAGE 3 : ORDER -->
+<section id="order" class="page">
+    <h2>Order Your Flowers</h2>
+
+    <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Email ID" required>
+        <input type="tel" placeholder="Phone Number" required>
+        <textarea rows="4" placeholder="Delivery Address" required></textarea>
+        <button type="submit">Place Order</button>
+    </form>
+
+    <p style="text-align:center;margin-top:20px;">
+        📞 Contact: 98765 43210 <br>
+        📧 Email: genieflowers@gmail.com
+    </p>
+</section>
+
+</body>
+</html>
